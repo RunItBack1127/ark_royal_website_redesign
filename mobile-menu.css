@@ -2,6 +2,10 @@
     display: flex !important;
 }
 
+.hide-user-viewport {
+    overflow-y: hidden;
+}
+
 #site__mobile-menu {
     display: none;
     align-items: center;
@@ -54,4 +58,20 @@
 #close__container button img {
     width: 40px !important;
     filter: invert(1);
+}
+
+@media screen and (max-height: 400px) {
+    #site__mobile-social-logo {
+        top: 30px;
+        left: 30px;
+        width: 40px;
+    }
+
+    #mobile-menu-contents {
+        margin-top: 2.5em;
+    }
+
+    #mobile-menu-contents a p:not(last-child) {
+        margin-bottom: 1em;
+    }
 }

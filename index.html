@@ -43,6 +43,10 @@
             color: #fff;
         }
 
+        a:hover {
+            color: inherit !important;
+        }
+
         ul {
             list-style: none;
             margin-bottom: 0;   /** Counteracts Bootstrap */
@@ -74,8 +78,11 @@
 
     <script>
         function __ToggleMobileMenu() {
+            const body = document.querySelector('body');
             const mobileMenu = document.getElementById('site__mobile-menu');
+
             mobileMenu.classList.toggle('show-mobile-menu');
+            body.classList.toggle('hide-user-viewport');
         }
     </script>
 </head>
