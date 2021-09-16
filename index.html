@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="sig-ct.css">
     <link rel="stylesheet" href="lch.css">
+    <link rel="stylesheet" href="mobile-menu.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
@@ -70,6 +71,13 @@
             }
         }
     </style>
+
+    <script>
+        function __ToggleMobileMenu() {
+            const mobileMenu = document.getElementById('site__mobile-menu');
+            mobileMenu.classList.toggle('show-mobile-menu');
+        }
+    </script>
 </head>
 <body>
     <div id="navigation-menu__container">
@@ -227,6 +235,24 @@
             </div>
         </div>
     </section>
+
+    <div id="site__mobile-menu">
+        <div id="mobile-menu-contents">
+            <div id="close__container">
+                <button onclick="__ToggleMobileMenu()">
+                    <img src="close-icon.png">
+                </button>
+            </div>
+
+            <a href=""><p class="site__current-navigation-tab">Home</p></a>
+            <a href=""><p>Menu</p></a>
+            <a href=""><p>Contact</p></a>
+
+            <div id="site__mobile-social-logo">
+                <a href=""><img src="instagram-icon.png"></a>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
