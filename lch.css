@@ -21,10 +21,15 @@ p.lcp-header {
 #dow-hours-inner__container {
     display: flex;
     margin: 1em 0 2.5em;
+    width: 60%;
 }
 
 #dow__container {
-    margin-right: 2.5em;
+    margin-right: auto;
+}
+
+#hours__container {
+    text-align: right;
 }
 
 #hours__container p {
@@ -74,7 +79,7 @@ p.lcp-header {
 }
 
 #site__lch-logo img {
-    width: 75px !important;
+    width: 100px !important;
     filter: invert(1);
     margin-bottom: 35px;
 }
