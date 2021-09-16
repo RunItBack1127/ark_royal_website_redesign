@@ -1,0 +1,13 @@
+/* #about-us-contents #about-us-image__container {
+    display: flex;
+    justify-content: center;
+} */
+
+#site__template-about-us {
+    padding-bottom: 75px;
+}
+
+#about-us-contents #about-us-image__container img {
+    width: 375px !important;
+    margin: 0 auto;
+}

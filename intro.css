@@ -1,0 +1,144 @@
+#site__template-intro {
+    width: 100vw;
+    height: 543px;
+}
+
+#site__template-intro #intro-bg-image-container {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100vw;
+    height: 543px;
+    z-index: -2;
+}
+
+#site__template-intro #intro-bg-image-container img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#site__template-intro #intro-overlay {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100vw;
+    height: 543px;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+#site__template-intro #intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 85px;
+    z-index: 2;
+}
+
+#site__template-intro #intro-text h1 {
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.75em;
+    text-transform: uppercase;
+}
+
+#site__template-intro #intro-text h2 {
+    font-size: 0.45em;
+    font-weight: 300;
+    line-height: 1.15em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    width: 20em;
+    max-width: 90%;
+    margin-bottom: 1.75em;
+}
+
+#site__template-intro #intro-text a {
+    font-size: 0.375em;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    transition: all 200ms ease-in-out;
+}
+
+#site__template-intro #intro-text a:hover {
+    border-color: #000;
+    background-color: #000;
+}
+
+/* @media screen and (max-width: 628px) {
+    #site__template-intro #intro-text {
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 629px) and (max-width: 757px) {
+    #site__template-intro #intro-text {
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-width: 758px) and (max-width: 894px) {
+    #site__template-intro #intro-text {
+        font-size: 55px;
+    }
+} */
+
+@media screen and (max-width: 300px) {
+    #site__template-intro #intro-text {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    #site__template-intro #intro-bg-image-container {
+        top: 200px;
+    }
+
+    #site__template-intro #intro-overlay {
+        top: 200px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 618px) {
+    #site__template-intro #intro-text {
+        font-size: 55px;
+    }
+}
+
+@media screen and (min-width: 619px) and (max-width: 710px) {
+    #site__template-intro #intro-text {
+        font-size: 65px;
+    }
+}
+
+@media screen and (min-width: 711px) and (max-width: 860px) {
+    #site__template-intro #intro-text {
+        font-size: 75px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    #site__template-intro #intro-text h1 {
+        line-height: 1em;
+        margin-bottom: 0.5em;
+    }
+}
+
+@media screen and (min-width: 861px) and (max-width: 1024px) {
+    #site__template-intro #intro-text {
+        font-size: 65px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1155px) {
+    #site__template-intro #intro-text {
+        font-size: 75px;
+    }
+}
