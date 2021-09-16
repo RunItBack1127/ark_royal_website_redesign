@@ -96,13 +96,13 @@
     }
 }
 
-@media screen and (max-width: 495px) {
+@media screen and (max-width: 341px) {
     #site__template-intro #intro-bg-image-container {
-        top: 200px;
+        top: 150px;
     }
 
     #site__template-intro #intro-overlay {
-        top: 200px;
+        top: 150px;
     }
 }
 
