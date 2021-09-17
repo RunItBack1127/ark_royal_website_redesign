@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="sig-ct.css">
     <link rel="stylesheet" href="lch.css">
     <link rel="stylesheet" href="mobile-menu.css">
+    <link rel="stylesheet" href="intro-cards.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
@@ -32,7 +33,7 @@
         body {
             font-family: 'Poppins', sans-serif;
             font-size: 20px;
-            background-color: #121212;
+            background-color: #101010;
             color: #fff;
             overflow-x: hidden;
         }
@@ -136,13 +137,40 @@
         </div>
     </section>
 
-    <section class="container" id="site__template-about-us">
+    <!-- <section class="container" id="site__template-about-us">
         <div class="row" id="about-us-contents">
-            <div class="col-md-12 col-lg-6" id="about-us-para__container">
+            <div class="col-md-12 col-lg-12" id="about-us-para__container">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo ullamcorper a lacus vestibulum sed. Amet commodo nulla facilisi nullam. Commodo quis imperdiet massa tincidunt. Nibh venenatis cras sed felis eget velit aliquet. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus a. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae. Quisque egestas diam in arcu cursus euismod. Faucibus a pellentesque sit amet porttitor</p>
             </div>
             <div class="col-lg-6 d-none d-lg-flex" id="about-us-image__container">
                 <img class="img-fluid" src="about-us.png">
+            </div>
+        </div>
+    </section> -->
+
+    <section id="site__intro-text__container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo ullamcorper a lacus vestibulum sed. Amet commodo nulla facilisi nullam. Commodo quis imperdiet massa tincidunt. Nibh venenatis cras sed felis eget velit aliquet. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus a. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae. Quisque egestas diam in arcu cursus euismod. Faucibus a pellentesque sit amet porttitor</p>
+    </section>
+
+    <section id="site__intro-cards" class="container">
+        <div class="row">
+            <div class="intro-card-container col-md-4 col-sm-12">
+                <div id="intro-card-img__container">
+                    <img width="300px !important" class="img-fluid" src="card-1.png">
+                </div>
+                <div id="intro-card-overlay"><p>Tiki Legends</p></div>
+            </div>
+            <div class="intro-card-container col-md-4 col-sm-12">
+                <div id="intro-card-img__container">
+                    <img width="300px !important" class="img-fluid" src="card-2.png">
+                </div>
+                <div id="intro-card-overlay"><p>Beers & Ciders</p></div>
+            </div>
+            <div class="intro-card-container col-md-4 col-sm-12">
+                <div id="intro-card-img__container">
+                    <img width="300px !important" class="img-fluid" src="card-3.png">
+                </div>
+                <div id="intro-card-overlay"><p>Sake, Wine, and Bubbles</p></div>
             </div>
         </div>
     </section>
@@ -194,7 +222,7 @@
 
     <section class="container-fluid" id="site__template-lch">
         <div class="row" id="lch-contents">
-            <div class="col-md-4 col-sm-12" id="lcp__container">
+            <div class="col-md-6 col-sm-12" id="lcp__container">
                 <div class="lch-outer-container">
                     <p class="lcp-header">Address</p>
                     <div class="lcp-inner-container">
@@ -213,11 +241,13 @@
                 </div>
             </div>
 
-            <div class="col-md-4" id="site__lch-logo">
+            <!-- <div class="col-md-4" id="site__lch-logo">
                 <img src="cocktail-icon.png">
-            </div>
+            </div> -->
 
-            <div class="col-md-4 col-sm-12" id="dow-hours__container">
+            <hr id="loc-hours-separator">
+
+            <div class="col-md-6 col-sm-12" id="dow-hours__container">
                 <p class="lcp-header">Lounge Hours</p>
                 <div id="dow-hours-inner__container">
                     <div class="dow-hour-pad" id="dow__container">

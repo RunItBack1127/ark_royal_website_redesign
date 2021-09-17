@@ -64,30 +64,7 @@
     padding: 0.5em 1em;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    /* transition: padding 100ms ease-in-out; */
 }
-
-/* #site__template-intro #intro-text a:hover {
-    padding: 0.6em 1.5em;
-} */
-
-/* @media screen and (max-width: 628px) {
-    #site__template-intro #intro-text {
-        font-size: 35px;
-    }
-}
-
-@media screen and (min-width: 629px) and (max-width: 757px) {
-    #site__template-intro #intro-text {
-        font-size: 45px;
-    }
-}
-
-@media screen and (min-width: 758px) and (max-width: 894px) {
-    #site__template-intro #intro-text {
-        font-size: 55px;
-    }
-} */
 
 @media screen and (max-width: 300px) {
     #site__template-intro #intro-text {

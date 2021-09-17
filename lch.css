@@ -8,11 +8,14 @@ p.lcp-header {
 #lcp__container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 2.5em;
+    /* margin-bottom: 2.5em; */
+    height: 415px;
 }
 
 #dow-hours__container {
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,4 +86,16 @@ p.lcp-header {
     width: 100px !important;
     filter: invert(1);
     margin-bottom: 35px;
+}
+
+#loc-hours-separator {
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+    #loc-hours-separator {
+        display: block;
+    }
 }
