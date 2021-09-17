@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARK ROYAL SITE TEST</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="sig-ct.css">
+    <link rel="stylesheet" href="lch.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --site-max-width: 1800px;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            background-color: #121212;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none !important;
+            display: block;
+            color: #fff;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 0;   /** Counteracts Bootstrap */
+        }
+
+        img {
+            display: inline-block;
+            object-fit: cover;
+        }
+
+        hr {
+            display: inline-block;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        section {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 300px) {
+            body {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="navigation-menu__container">
+        <div class="site__responsive-navigation-menu">
+            <nav class="site__main-navigation-menu">
+                <img id="site__logo" src="ark-royal-logo.png">
+
+                <ul>
+                    <li><a href=""><span class="site__current-navigation-tab">Home</span></a></li>
+                    <li><a href=""><span>Menu</span></a></li>
+                    <li><a href=""><span>Contact</span></a></li>
+                </ul>
+
+                <button id="site__responsive-line-menu" onclick="__ToggleMobileMenu()">
+                    <img src="hb-icon.png">
+                </button>
+
+                <a href="">
+                    <img id="site__social-logo" src="instagram-icon.png">
+                </a>
+            </nav>
+            <div class="site__responsive-hb-container">
+                <button id="hb-icon-btn" onclick="__ToggleMobileMenu()">
+                    <img src="hb-icon.png">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <section id="site__template-intro">
+        <div id="intro-bg-image-container">
+            <img src="website-bg.jpg">
+        </div>
+        <div id="intro-overlay"></div>
+        <div id="intro-text">
+            <h1>Exotic Cocktail Lounge</h1>
+            <h2>Tiki Nightlife In the Heart Of Downtown Raleigh</h2>
+            <a href="">Browse Our Menu</a>
+        </div>
+    </section>
+
+    <section class="site__template-header">
+        <div class="header-contents">
+            <div class="site__section-header">
+                <hr>
+                <h1>Welcome Aboard!</h1>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="site__template-about-us">
+        <div class="row" id="about-us-contents">
+            <div class="col-md-12 col-lg-6" id="about-us-para__container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo ullamcorper a lacus vestibulum sed. Amet commodo nulla facilisi nullam. Commodo quis imperdiet massa tincidunt. Nibh venenatis cras sed felis eget velit aliquet. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus a. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae. Quisque egestas diam in arcu cursus euismod. Faucibus a pellentesque sit amet porttitor</p>
+            </div>
+            <div class="col-lg-6 d-none d-lg-flex" id="about-us-image__container">
+                <img class="img-fluid" src="about-us.png">
+            </div>
+        </div>
+    </section>
+
+    <section id="sig-ct-header" class="site__template-header site__sig-ct-bg">
+        <div class="header-contents">
+            <div class="site__section-header">
+                <hr class="sig-ct-hline">
+                <h1>Signature Frozen Cocktails</h1>
+                <hr class="sig-ct-hline">
+            </div>
+        </div>
+    </section>
+
+    <section class="site__sig-ct-bg" id="sig-ct-tagline__container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo ullamcorper a lacus vestibulum sed.</p>
+    </section>
+
+    <section class="container-fluid site__sig-ct-bg" id="site__template-sig-ct">
+        <div class="row" id="sig-ct-contents">
+            <div class="col-sm-12 col-md-4 sig-ct__container">
+                <img class="img-fluid" src="cocktail-1.jpg">
+                <h1>Cocktail Name 1</h1>
+                <h2>$99.99</h2>
+            </div>
+            <div class="col-sm-12 col-md-4 sig-ct__container">
+                <img class="img-fluid" src="cocktail-2.jpg">
+                <h1>Cocktail Name 2</h1>
+                <h2>$99.99</h2>
+            </div>
+            <div class="col-sm-12 col-md-4 sig-ct__container">
+                <img class="img-fluid" src="cocktail-3.jpg">
+                <h1>Cocktail Name 3</h1>
+                <h2>$99.99</h2>
+            </div>
+        </div>
+        <a href="">Full Menu</a>
+    </section>
+
+    <section class="site__template-header">
+        <div class="header-contents">
+            <div class="site__section-header">
+                <hr>
+                <h1>Come Find Us!</h1>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="site__template-lch">
+        <div class="row" id="lch-contents">
+            <div class="col-md-4 col-sm-12" id="lcp__container">
+                <div class="lch-outer-container">
+                    <p class="lcp-header">Address</p>
+                    <div class="lcp-inner-container">
+                        <img src="location-icon.png">
+                        <p>410 Glenwood South<br>Raleigh, NC 27603<br>Suite 350</p>
+                    </div>
+                    <a href="">Get Directions</a>
+                </div>
+
+                <div class="lch-outer-container">
+                    <p class="lcp-header">Contact</p>
+                    <div class="lcp-inner-container">
+                        <img src="phone-icon.png">
+                        <p>(919) 322-5148</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" id="site__lch-logo">
+                <img src="cocktail-icon.png">
+            </div>
+
+            <div class="col-md-4 col-sm-12" id="dow-hours__container">
+                <p class="lcp-header">Lounge Hours</p>
+                <div id="dow-hours-inner__container">
+                    <div class="dow-hour-pad" id="dow__container">
+                        <p>Sunday</p>
+                        <p>Monday</p>
+                        <p>Tuesday</p>
+                        <p>Wednesday</p>
+                        <p>Thursday</p>
+                        <p>Friday</p>
+                        <p>Saturday</p>
+                    </div>
+                    <div class="dow-hour-pad" id="hours__container">
+                        <p>Open</p>
+                        <p>Closed</p>
+                        <p>Closed</p>
+                        <p>Open</p>
+                        <p>Open</p>
+                        <p>Open</p>
+                        <p>Open</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
