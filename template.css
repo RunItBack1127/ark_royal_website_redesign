@@ -31,7 +31,7 @@
     text-align: center;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 341px) {
     .site__section-header {
         font-size: 1.25em;
     }

@@ -64,13 +64,12 @@
     padding: 0.5em 1em;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    transition: all 200ms ease-in-out;
+    /* transition: padding 100ms ease-in-out; */
 }
 
-#site__template-intro #intro-text a:hover {
-    border-color: #000;
-    background-color: #000;
-}
+/* #site__template-intro #intro-text a:hover {
+    padding: 0.6em 1.5em;
+} */
 
 /* @media screen and (max-width: 628px) {
     #site__template-intro #intro-text {
@@ -96,13 +95,13 @@
     }
 }
 
-@media screen and (max-width: 495px) {
+@media screen and (max-width: 341px) {
     #site__template-intro #intro-bg-image-container {
-        top: 200px;
+        top: 150px;
     }
 
     #site__template-intro #intro-overlay {
-        top: 200px;
+        top: 150px;
     }
 }
 
